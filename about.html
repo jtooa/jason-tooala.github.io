@@ -17,9 +17,66 @@
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "Person", "name": "Jason Tooala", "url": "https://example.com", "jobTitle": "Mechanical Engineer", "knowsAbout": ["SolidWorks", "MATLAB", "Revit", "NX CAD", "FEA", "Heat Transfer"]}
   </script>
+  
   <link rel="preload" as="image" href="/assets/images/me.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="/assets/style.css">
+
+  <style>
+    :root{
+      --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --accent:#60a5fa; --accent-2:#34d399; --card:#0b1220; --border:rgba(255,255,255,.06);
+    }
+    html{ font-size:17px; }
+    body{
+      margin:0; color:var(--text); background:var(--bg);
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; line-height:1.6;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
+    .header,.footer{ background:var(--panel); border-color:var(--border); }
+    .header{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10;}
+    .brand{ font-weight:800; color:var(--text); text-decoration:none; font-size:1.1rem; }
+    .nav a{ color:var(--text); opacity:.85; text-decoration:none; margin-left:1rem; }
+    .nav a:hover{ opacity:1; color:var(--accent); }
+
+    .section{ padding:2rem 0 3rem; }
+    h2{ font-size:clamp(1.3rem,1.2vw + 1rem,2rem); margin:0 0 .75rem; }
+    h3{ margin-top:0; }
+
+    /* Two-column responsive layout */
+    .row{
+      display:grid; gap:1.25rem;
+      grid-template-columns: minmax(0,1fr);
+    }
+    @media (min-width: 800px){
+      .row{ grid-template-columns: 380px minmax(0,1fr); align-items:start; }
+    }
+
+    /* Avatar image */
+    .about-photo{
+      width:100%; max-width:260px; height:auto; border-radius:1rem;
+      display:block; border:1px solid var(--border); background:#0b1220;
+    }
+
+    .meta{ color:var(--muted); }
+
+    /* Link style */
+    a{ color:var(--accent); }
+    a:hover{ color:var(--accent-2); }
+
+    /* Callout card (optional) */
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:1rem; padding:1rem;
+    }
+
+    .footer{ border-top:1px solid var(--border); padding:1rem 0; color:var(--muted); }
+  </style>
+
   <link rel="canonical" href="https://jason-tooala.github.io/about.html">
 </head>
 <body>
@@ -36,22 +93,25 @@
   <section class="section">
     <h2>About</h2>
     <div class="row">
+      
       <div>
-            <img src="assets/images/me.png" alt="Jason Tooala" width="240" height="240" loading="eager">
-        
-        <p>Hi, I’m Jason Tooala, a mechanical engineer focused on CAD, thermal management, and manufacturable designs.
-           I enjoy building clean, reliable systems—and explaining the engineering behind them.</p>
-        <p>Tools: SolidWorks, MATLAB, Revit, NX CAD, Python, ANSYS, Onshape.</p>
-        <p>Email: <a href="mailto:tooalajason@gmail.com">tooalajason@gmail.com</a></p>
-        <p>
-          LinkedIn: 
-          <a href="https://www.linkedin.com/in/jason-tooala/" target="_blank" rel="me noopener noreferrer">LinkedIn</a> 
-          · GitHub: <a href="#">Add your link</a> 
-          · YouTube: <a href="#">Add your link</a>
+        <img class = "about-photo" src="assets/images/me.png" alt="Jason Tooala" width="240" height="240" loading="eager">
+       
+        <p class="meta" style="margin-top:.75rem;">
+          Email: <a href="mailto:tooalajason@gmail.com">tooalajason@gmail.com</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/jason-tooala/" target="_blank" rel="me noopener noreferrer">linkedin.com/in/jason-tooala</a><br>
+          GitHub: <a href="https://github.com/jason-tooala" target="_blank" rel="me noopener">github.com/jason-tooala</a>
         </p>
       </div>
+
       <div>
-        <h3>What I bring</h3>
+        <div class="card">
+          <p>Hi, I’m Jason Tooala, a mechanical engineer focused on CAD, thermal management, and manufacturable designs.
+             I enjoy building clean, reliable systems—and explaining the engineering behind them.</p>
+          <p><strong>Tools:</strong> SolidWorks, MATLAB, Revit, NX CAD, Python, ANSYS, Onshape.</p>
+        </div>
+
+        <h3 style="margin-top:1.25rem;">What I bring</h3>
         <ul>
           <li>CAD assemblies, drawings, and BOMs ready for fabrication</li>
           <li>Thermal analysis and optimization in MATLAB/Python</li>
