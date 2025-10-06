@@ -15,14 +15,14 @@
     }
   },
   {
-    "title": "Gearbox Design (SolidWorks)",
-    "summary": "Modeled helical gear train; validated contact ratio and bearing loads. Produced drawings and exploded views.",
+    "title": "Revolute Gear Design (SolidWorks)",
+    "summary": "Modeled revolute gear pair; validated normal and axial pitches, lead, and contact ratio. Produced drawings and exploded views.",
     "tags": [
       "SolidWorks",
       "CAD",
-      "Manufacturing"
+      "Gears"
     ],
-    "image": "/assets/images/placeholder.svg",
+    "image": "/assets/images/revolutegear.png",
     "links": {
       "gallery": "#",
       "bom": "#"
@@ -30,7 +30,7 @@
   },
   {
     "title": "Cleanroom Layout (Revit)",
-    "summary": "Conceptual ISO\u20119 cleanroom with HVAC zoning, airflow visualization, and equipment schedule.",
+    "summary": "Conceptual ISO-9 cleanroom with HVAC zoning, airflow visualization, and equipment schedule.",
     "tags": [
       "Revit",
       "BIM",
