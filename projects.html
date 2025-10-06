@@ -12,14 +12,17 @@
   <meta property="og:description" content="Mechanical engineering portfolio featuring SolidWorks, MATLAB, Revit projects, and more.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jason-tooala.github.io/projects.html">
-  <meta property="og:image" content="https://jason-tooala.github.io/assets/images/placeholder.svg">
+  <meta property="og:image" content="https://jason-tooala.github.io/assets/images/revolutegear.png">
+
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "Person", "name": "Jason Tooala", "url": "https://example.com", "jobTitle": "Mechanical Engineer", "knowsAbout": ["SolidWorks", "MATLAB", "Revit", "NX CAD", "FEA", "Heat Transfer"]}
   </script>
-  <link rel="preload" as="image" href="assets/images/revolutegear.png" type="image/svg+xml">
+
+  <!-- Preload the actual PNG with the correct type -->
+  <link rel="preload" as="image" href="assets/images/revolutegear.png" type="image/png">
+
   <link rel="stylesheet" href="assets/style.css">
   <link rel="canonical" href="https://jason-tooala.github.io/projects.html">
-
 </head>
 <body>
 <div class="container">
@@ -50,6 +53,7 @@
         <p><strong>Tip:</strong> For CAD models, add image galleries, assembly explosions, and drawings. For MATLAB, include plots and key equations. For Revit, embed short walkthrough videos.</p>
       </div>
     </div>
+
     <div class="grid" data-grid>
 
       <article class="card" data-tags="matlab,heat transfer,optimization">
@@ -61,12 +65,17 @@
         </div>
       </article>
 
-      <article class="card" data-tags="solidworks,cad,manufacturing">
-        <img src="assets/images/placeholder.svg" alt="Cover image for Gearbox Design (SolidWorks)">
+      <!-- Updated card to use your revolute gear PNG -->
+      <article class="card" data-tags="solidworks,cad,gears">
+        <img 
+          src="assets/images/revolutegear.png"
+          alt="Revolute gear design rendered in SolidWorks"
+          loading="lazy"
+          width="640" height="360">
         <div class="body">
-          <div class="title">Gearbox Design (SolidWorks)</div>
-          <div class="meta">Modeled helical gear train; validated contact ratio and bearing loads. Produced drawings and exploded views.</div>
-          <div class="tags"><span class="tag">SolidWorks</span><span class="tag">CAD</span><span class="tag">Manufacturing</span></div>
+          <div class="title">Revolute Gear Design (SolidWorks)</div>
+          <div class="meta">Modeled gear pair; validated normal/axial pitches, lead, and contact ratio. Produced drawings and exploded views.</div>
+          <div class="tags"><span class="tag">SolidWorks</span><span class="tag">CAD</span><span class="tag">Gears</span></div>
         </div>
       </article>
 
@@ -74,7 +83,7 @@
         <img src="assets/images/placeholder.svg" alt="Cover image for Cleanroom Layout (Revit)">
         <div class="body">
           <div class="title">Cleanroom Layout (Revit)</div>
-          <div class="meta">Conceptual ISO‑9 cleanroom with HVAC zoning, airflow visualization, and equipment schedule.</div>
+          <div class="meta">Conceptual ISO-9 cleanroom with HVAC zoning, airflow visualization, and equipment schedule.</div>
           <div class="tags"><span class="tag">Revit</span><span class="tag">BIM</span><span class="tag">HVAC</span></div>
         </div>
       </article>
