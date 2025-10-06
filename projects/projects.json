@@ -7,7 +7,7 @@
       "Heat Transfer",
       "Optimization"
     ],
-    "image": "/assets/images/placeholder.svg",
+    "image": "assets/images/placeholder.svg",
     "links": {
       "report": "#",
       "code": "#",
@@ -22,7 +22,7 @@
       "CAD",
       "Gears"
     ],
-    "image": "/assets/images/revolutegear.png",
+    "image": "assets/images/revolutegear.png",
     "links": {
       "gallery": "#",
       "bom": "#"
@@ -36,7 +36,7 @@
       "BIM",
       "HVAC"
     ],
-    "image": "/assets/images/placeholder.svg",
+    "image": "assets/images/placeholder.svg",
     "links": {
       "model": "#",
       "walkthrough": "#"
